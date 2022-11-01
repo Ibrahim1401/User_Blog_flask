@@ -8,7 +8,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 db = SQLAlchemy(app)
 
 class users_data(db.Model):
-    uid = db.Column("id",db.Integer,primary_key=True)
+    uid = db.Column("id",db.Integer,primary_key=True or False)
     name = db.Column(db.String(80))
     pwd = db.Column(db.String(80))
     date = db.Column(db.String(80))
